@@ -9,7 +9,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         return self
     
-    def compile(self, loss, optimizer, metrics):
+    def compile(self, optimizer, loss):
         return self
 
     def transform(self, X):
