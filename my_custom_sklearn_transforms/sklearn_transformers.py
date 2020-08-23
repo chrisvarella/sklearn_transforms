@@ -6,7 +6,7 @@ class DropColumns(BaseEstimator, TransformerMixin):
     def __init__(self, columns):
         self.columns = columns
 
-    def fit(self, X, y, epochs, batch_size, validation_split):
+    def fit(self, X, y=None):
         return self
     
     def compile(self, loss, optimizer, metrics):
