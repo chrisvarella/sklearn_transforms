@@ -8,6 +8,9 @@ class DropColumns(BaseEstimator, TransformerMixin):
 
     def fit(self, X, y=None, epochs, batch_size, validation_split):
         return self
+    
+    def compile(self, loss, optimizer, metrics):
+        return self
 
     def transform(self, X):
         # Primeiro realizamos a cópia do dataframe 'X' de entrada
